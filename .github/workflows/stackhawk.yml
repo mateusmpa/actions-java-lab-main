@@ -51,6 +51,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Check jar
+        run: ls -la target/
+
       - name: Start your service
         run: java -jar target/actions-java-lab-1.0-SNAPSHOT-jar-with-dependencies.jar &                 # ✏️ Update this to run your own service to be scanned
 
